@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>isra19dev · Portfolio</title>
+  <meta name="description" content="Portfolio de Israel Rodríguez (isra19dev): desarrollador de aplicaciones multiplataforma, especialista en IA y Big Data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#inicio">isra19dev</a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#formacion">Formación</a>
+      <a href="#skills">Skills</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-ghost btn-cv" href="CV-Israel-Rodriguez.pdf" download>Descargar CV</a>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero screentone">
+      <p class="eyebrow">Huelva, España</p>
+      <h1>isra19dev</h1>
+      <p class="name">Israel Rodríguez</p>
+      <p class="role">Desarrollador de aplicaciones multiplataforma · Especialista en IA y Big Data</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn btn-ghost" href="CV-Israel-Rodriguez.pdf" download>Descargar CV</a>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section">
+      <h2>Sobre mí</h2>
+      <p class="lead">Desarrollador de aplicaciones multiplataforma con formación en DAM y especialización en Inteligencia Artificial y Big Data. Tengo experiencia práctica en desarrollo backend con Java, uso de frameworks como Spring Boot y gestión de bases de datos SQL.</p>
+      <p>Soy una persona proactiva, con alta motivación por seguir aprendiendo y crecer profesionalmente en el desarrollo de software, especialmente en entornos tecnológicos y colaborativos.</p>
+    </section>
+
+    <section id="proyectos" class="section">
+      <h2>Proyectos</h2>
+      <div class="filters" role="group" aria-label="Filtrar proyectos">
+        <button class="chip active" data-filter="all" aria-pressed="true">Todos</button>
+        <button class="chip" data-filter="vision" aria-pressed="false">Visión por computador</button>
+        <button class="chip" data-filter="redes" aria-pressed="false">Redes neuronales</button>
+        <button class="chip" data-filter="ml" aria-pressed="false">Machine learning</button>
+      </div>
+
+      <div class="grid">
+        <article class="card" data-cat="vision">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>Multiple Waste Classifier</h3>
+          <p>Sistema de clasificación de residuos en 4 categorías (plástico, papel, metal y vidrio) con visión por computador y Transfer Learning.</p>
+          <ul class="tags"><li>Python</li><li>TensorFlow</li><li>Transfer Learning</li><li>Streamlit</li></ul>
+          <a class="btn btn-primary" href="https://github.com/isra19dev/Multiple-Waste-Classifier-With-Transfer-Learning" target="_blank" rel="noopener" aria-label="Ver el proyecto en GitHub (se abre en pestaña nueva)">Ver en GitHub</a>
+        </article>
+
+        <article class="card" data-cat="vision">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 6h18M5 6l1 14h12l1-14M9 6V4h6v2"/></svg>
+          </div>
+          <h3>Binary Waste Classifier</h3>
+          <p>Aplicación que usa inteligencia artificial y Transfer Learning para clasificar imágenes subidas por el usuario como papel o plástico.</p>
+          <ul class="tags"><li>Python</li><li>Transfer Learning</li><li>Streamlit</li></ul>
+          <a class="btn btn-primary" href="https://github.com/isra19dev/Binary-Waste-Classifier-With-Transfer-Learning" target="_blank" rel="noopener" aria-label="Ver el proyecto en GitHub (se abre en pestaña nueva)">Ver en GitHub</a>
+        </article>
+
+        <article class="card" data-cat="redes">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><path d="M7 6l3.5 5M7 18l3.5-5M14 12h3"/></svg>
+          </div>
+          <h3>Digit Recognition</h3>
+          <p>Reconocimiento de dígitos manuscritos con una red neuronal MLP (97,78 % de precisión) y predicciones en tiempo real sobre un lienzo de dibujo.</p>
+          <ul class="tags"><li>Python</li><li>MLP</li><li>Streamlit</li></ul>
+          <a class="btn btn-primary" href="https://github.com/isra19dev/Digit-Recognition-Neural-Networks" target="_blank" rel="noopener" aria-label="Ver el proyecto en GitHub (se abre en pestaña nueva)">Ver en GitHub</a>
+        </article>
+
+        <article class="card" data-cat="ml">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/></svg>
+          </div>
+          <h3>Movie Recommender</h3>
+          <p>Aplicación web que recomienda películas nuevas a partir de las que ya has valorado, agrupando las parecidas con K-Means.</p>
+          <ul class="tags"><li>Python</li><li>K-Means</li><li>Streamlit</li></ul>
+          <a class="btn btn-primary" href="https://github.com/isra19dev/ML-and-Streamlit-Movie-Recommender-KMeans" target="_blank" rel="noopener" aria-label="Ver el proyecto en GitHub (se abre en pestaña nueva)">Ver en GitHub</a>
+        </article>
+
+        <article class="card" data-cat="ml">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 20h18M5 16l4-5 4 3 6-8"/><circle cx="19" cy="6" r="1.5"/></svg>
+          </div>
+          <h3>Mercedes Car Price Prediction</h3>
+          <p>Proyecto de machine learning que predice el precio de vehículos Mercedes-Benz, desarrollado en Python con interfaz en Streamlit.</p>
+          <ul class="tags"><li>Python</li><li>Regresión</li><li>Streamlit</li></ul>
+          <a class="btn btn-primary" href="https://github.com/isra19dev/ML-and-Streamlit-Mercedes-Car-Price-Prediction" target="_blank" rel="noopener" aria-label="Ver el proyecto en GitHub (se abre en pestaña nueva)">Ver en GitHub</a>
+        </article>
+
+        <article class="card card-soon" data-cat="all">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <h3>Próximamente</h3>
+          <p>Nuevos proyectos de IA, Big Data y desarrollo backend con Java.</p>
+          <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Spark</li></ul>
+          <span class="soon">Próximamente</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section">
+      <h2>Experiencia</h2>
+      <div class="timeline">
+        <div class="item">
+          <h3>Técnico de desarrollo de aplicaciones</h3>
+          <p class="meta">Ayto. Isla Cristina · Prácticas · Abril – Junio 2024</p>
+          <ul>
+            <li>Uso práctico de JavaFX.</li>
+            <li>Control y administración de bases de datos.</li>
+            <li>Testeo de aplicaciones.</li>
+            <li>Coordinación de servicios generales con cliente externo.</li>
+            <li>Documentación básica de procesos y aplicaciones.</li>
+            <li>Resolución de incidencias.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacion" class="section">
+      <h2>Formación</h2>
+      <div class="timeline">
+        <div class="item">
+          <h3>Curso de especialización en Inteligencia Artificial y Big Data</h3>
+          <p class="meta">I.E.S Las Marismas · Septiembre 2025 – Actualidad</p>
+        </div>
+        <div class="item">
+          <h3>Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+          <p class="meta">I.E.S Padre José Miravent · Septiembre 2022 – Julio 2024</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Lenguajes</h3>
+          <ul class="tags"><li>Java</li><li>Python</li><li>Kotlin</li><li>SQL</li><li>HTML</li><li>CSS</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend y frameworks</h3>
+          <ul class="tags"><li>Spring Boot</li><li>JPA</li><li>Hibernate</li><li>JavaFX</li><li>Odoo</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Datos e IA</h3>
+          <ul class="tags"><li>Spark</li><li>Hadoop</li><li>Streamlit</li><li>Excel</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Herramientas</h3>
+          <ul class="tags"><li>GitHub</li><li>MySQL</li><li>Unity</li><li>Bonita St.</li><li>Copilot</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Habilidades blandas</h3>
+          <ul class="tags"><li>Proactividad</li><li>Trabajo en equipo</li><li>Resolución práctica</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <div class="contact">
+        <a class="contact-row" href="mailto:israelrodgonz@gmail.com">
+          <span class="contact-label">Email</span>
+          <span>israelrodgonz@gmail.com</span>
+        </a>
+        <a class="contact-row" href="https://www.linkedin.com/in/israel-rodr%C3%ADguez-358bb2383/" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span>Israel Rodríguez González</span>
+        </a>
+        <a class="contact-row" href="https://github.com/isra19dev" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span>isra19dev</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 isra19dev</p>
+    <a href="#inicio">Volver arriba</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
